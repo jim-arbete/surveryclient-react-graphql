@@ -42,8 +42,8 @@ const App = () => {
         </div>
         <div></div>
       </header>
-      {! localStorage.getItem('token') && <p>NO AUTH TOKEN: type $ <code>localStorage.setItem('token', 'yoursecretkey') </code> in [Console] <br />
-      To set tokens in chrome/safari/firefox pick either or set manually [Application => Local Storage] in chrome dev tools<br />
+      {! localStorage.getItem('token') && <p>NO AUTH TOKEN: type $ <code>localStorage.setItem('token', 'yoursecretkey') </code> in browser [Console] <br />
+      To set tokens manually in chrome/safari go to [Application => Local Storage] in chromium dev tools<br />
       Hit F5 refresh when done.
       </p> }
       <div id="main" className="grid">
