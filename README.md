@@ -4,6 +4,26 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+## Installation Prerequisites
+1. Install Node.js version 11 or later `https://nodejs.org/en/download/`. 
+
+## Installation
+
+```bash
+$ git clone https://github.com/jim-arbete/surveryclient-react-graphql.git surveryclient-react-graphql
+$ cd surveryclient-react-graphql
+$ npm install
+```
+
+## Setup .env for Dev machine !! NOT FOR PRODUCTION !!
+
+```bash
+$ cd surveryclient-react-graphql
+$ touch .env
+```
+
+1. Copy content from `.env.example` and fill in ur keys in the newly created `.env`
+
 ### `npm start`
 
 Runs the app in the development mode.<br>
@@ -26,6 +46,19 @@ The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+
+## Build => Production server
+
+Run `npm run build` to build the project. The build artifacts will be stored in the `dist/` directory.
+
+1. Try out the build with npm serve. 
+2. Install serve `npm i serve -g`
+3. And run:
+```bash
+$ cd dist/surveryclient-react-graphql
+$ serve -l 5000
+```
 
 ### `npm run eject`
 

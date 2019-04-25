@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box; 
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #282c34;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 60px auto 60px;
+  grid-gap: 1em;
+}
+@media all and (max-width: 640px) {
+  .grid {
+    grid-template-columns: 5px auto 5px;
+  }
+}
+
+.grid-table-container {
+  display: grid;
+  grid-template-columns: 150px 150px;
+  grid-gap: 10px;
+  line-height: 2;
+}
+
+.grid-table-cell {
+  border-radius: 5px;
+  padding: 0.5em 1.5em;
+  text-align: center;
+}
+.grid-table-cell.th {
+  font-weight: 700;
+  background-color: #eeeeee;
+}
+.grid-table-cell.tr {
+  background-color: #e6e2e2;
+}
+
+.flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-flow: column wrap;
+}
+.flex-wrap div {
+  width: 230px;
+}
+.flex-vertical-center {
+  align-items: center;
+}
+
+header {
+  align-items: center;
+  color: white;
+  background-color: #282c34;
+  height: 12vh;
+  font-size: calc(8px + 2vmin);
+ 
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 5vmin;
+    pointer-events: none;
+  }
+  a {
+    font-weight: 700;
+  }
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+#main {
+  margin-top: 15px;
+  article {
+    background-color:#fafafa;
+    min-height: 400px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    flex: 1;
+    order: 1;
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 45px;
+    font-weight: 700;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ececec;
+  }
+  h2 {
+    margin: 0;
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 600;
+  }
+  small {
+    color: #55575d;
+    font-size: 20px;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  text-decoration: none;
+  color: #61dafb; 
+}
+
+p {
+  font-size: 17px;
+  line-height: 1.7; 
+}
